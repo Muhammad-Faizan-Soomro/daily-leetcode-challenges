@@ -1,5 +1,4 @@
 import os
-import datetime
 import urllib.parse
 
 README_FILE = "README.md"
@@ -9,20 +8,18 @@ def generate_table():
         f for f in os.listdir('.') 
         if f.endswith('.py') and not f.startswith('.') and os.path.isfile(f)
     ]
-    files = [(f, os.path.getmtime(f)) for f in files]
-    files.sort(key=lambda x: x[1])  # sort oldest → latest
+    files.sort(key=lambda x: os.path.getmtime(x))  # oldest → latest
 
-    table = "| Day | Date | Problem # | Problem Name | Solution |\n"
-    table += "|-----|------------|-----------|--------------|----------|\n"
+    table = "| Day | Problem # | Problem Name | Solution |\n"
+    table += "|-----|-----------|--------------|----------|\n"
     
-    for idx, (f, mtime) in enumerate(files, start=1):
+    for idx, f in enumerate(files, start=1):
         problem_num, problem_name = f.replace(".py", "").split(". ", 1)
-        date_str = datetime.datetime.fromtimestamp(mtime).strftime("%Y-%m-%d")
 
-        # Encode spaces and special chars for valid Markdown links
+        # Encode filename for valid Markdown link
         encoded_filename = urllib.parse.quote(f)
 
-        table += f"| {idx} | {date_str} | {problem_num} | {problem_name} | [Code]({encoded_filename}) |\n"
+        table += f"| {idx} | {problem_num} | {problem_name} | [Code]({encoded_filename}) |\n"
     return table
 
 def update_readme():
