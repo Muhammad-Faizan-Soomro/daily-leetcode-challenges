@@ -15,5 +15,8 @@ This repository is dedicated to my journey of solving **daily LeetCode problems*
 
 ## 📂 Progress Tracker
 <!-- START_TABLE -->
-This section will be auto-updated by the script.
+| Day | Date | Problem # | Problem Name | Solution |
+|-----|------------|-----------|--------------|----------|
+| 1 | 2025-09-25 | 1 | Two Sum | [Code](1. Two Sum.py) |
+
 <!-- END_TABLE -->
