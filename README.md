@@ -19,6 +19,7 @@ This repository is dedicated to my journey of solving **daily LeetCode problems*
 |-----|-----------|--------------|----------|
 | 1 | 3005 | Count Elements With Maximum Frequency | [Code](3005.%20Count%20Elements%20With%20Maximum%20Frequency.py) |
 | 2 | 166 | Fraction To Recurring Decimal | [Code](166.%20Fraction%20To%20Recurring%20Decimal.py) |
-| 3 | 165 | Compare Version Numbers | [Code](165.%20Compare%20Version%20Numbers.py) |
+| 3 | 120 | Triangle | [Code](120.%20Triangle.py) |
+| 4 | 165 | Compare Version Numbers | [Code](165.%20Compare%20Version%20Numbers.py) |
 
 <!-- END_TABLE -->
