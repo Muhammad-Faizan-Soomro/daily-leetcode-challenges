@@ -17,5 +17,6 @@ This repository is dedicated to my journey of solving **daily LeetCode problems*
 <!-- START_TABLE -->
 | Day | Problem # | Problem Name | Solution |
 |-----|-----------|--------------|----------|
+| 1 | 3005 | Count Elements With Maximum Frequency | [Code](3005.%20Count%20Elements%20With%20Maximum%20Frequency.py) |
 
 <!-- END_TABLE -->
